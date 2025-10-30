@@ -121,7 +121,7 @@ npm run dev
 Or manually:
 ```bash
 # Terminal 1
-cd server && npm start
+cd server && node index.js
 
 # Terminal 2
 cd client && npm run dev
