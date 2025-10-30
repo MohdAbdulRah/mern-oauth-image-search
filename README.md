@@ -1,23 +1,23 @@
-# 🖼️ Image Search & Multi-Select App (MERN + OAuth)
+#  Image Search & Multi-Select App (MERN + OAuth)
 
 A full-stack image search web app built with the **MERN stack (MongoDB, Express, React, Node.js)** and **OAuth authentication (Google, GitHub, Facebook)**.  
 Only authenticated users can search for images (via Unsplash API), view top searches, maintain personal history, and multi-select images.
 
 ---
 
-## 🚀 Features
+## Features
 
-✅ **OAuth Authentication** — Google, GitHub, Facebook login (via Passport.js)  
-✅ **Top Searches Banner** — shows top 5 most frequent search terms  
-✅ **Unsplash Integration** — search images via Unsplash API  
-✅ **Search History** — each user’s personal past searches stored in MongoDB  
-✅ **Multi-Select Grid** — select multiple images with a dynamic counter  
-✅ **Logout Support** — session-based authentication with cookies  
-✅ **Full MERN Stack** — React frontend + Express/Node backend + MongoDB  
+**OAuth Authentication** — Google, GitHub, Facebook login (via Passport.js)  
+**Top Searches Banner** — shows top 5 most frequent search terms  
+**Unsplash Integration** — search images via Unsplash API  
+**Search History** — each user’s personal past searches stored in MongoDB  
+**Multi-Select Grid** — select multiple images with a dynamic counter  
+**Logout Support** — session-based authentication with cookies  
+**Full MERN Stack** — React frontend + Express/Node backend + MongoDB  
 
 ---
 
-## 🏗️ Tech Stack
+## Tech Stack
 
 | Layer | Technology |
 |--------|-------------|
@@ -31,22 +31,34 @@ Only authenticated users can search for images (via Unsplash API), view top sear
 
 ---
 
-## 🗂️ Folder Structure
+## Folder Structure
 
 ```
 /client             # React frontend (Vite)
+   ├── public/       
+   ├── src/
+   |    ├── assets/           # contain images
+   |    ├── pages/            # pages of the website
+   |    |    ├── Login.jsx
+   |    |    ├── SearchPage.jsx
+   |    ├── App.jsx
+   |    ├── main.jsx
+   |    ├── .env             # frontend .env
 /server             # Express backend
-  ├── config/       # Passport + OAuth setup
   ├── routes/       # API endpoints
+  |     ├── api.js
+  |     ├── auth.js
   ├── models/       # MongoDB models
-  ├── controllers/  # Logic for each route
-  └── server.js     # Main server file
-.env                # Environment variables
+  |     ├── Search.js
+  |     ├── User.js
+  ├── server.js     # Main server file
+  ├── .env          # backend .env
+
 ```
 
 ---
 
-## ⚙️ Environment Variables
+## Environment Variables
 
 ### In `/server/.env`
 ```
@@ -81,7 +93,7 @@ VITE_API_BASE=http://localhost:5000
 
 ---
 
-## 🛠️ Installation & Setup
+##  Installation & Setup
 
 ### 1️⃣ Clone the repository
 ```bash
@@ -119,7 +131,7 @@ Visit → **http://localhost:5173**
 
 ---
 
-## 🌐 API Endpoints
+##  API Endpoints
 
 | Method | Endpoint | Description |
 |---------|-----------|-------------|
@@ -133,7 +145,7 @@ Visit → **http://localhost:5173**
 
 ---
 
-## 🧩 Frontend Overview
+##  Frontend Overview
 
 **Components:**
 - `Login.jsx` — OAuth login screen with buttons (Google, GitHub, Facebook)
@@ -192,7 +204,7 @@ Number of selected images also appears rightside
 
 ---
 
-## 📬 Postman / cURL Examples
+##  Postman / cURL Examples
 
 ### Example: Search
 ```bash
@@ -206,7 +218,7 @@ curl http://localhost:5000/api/top-searches
 
 ---
 
-## 🔒 Authentication Flow (OAuth)
+##  Authentication Flow (OAuth)
 1. User clicks **Login with Google / GitHub / Facebook**.  
 2. Redirects to the provider’s consent page.  
 3. On success, redirects to `/auth/<provider>/callback`.  
@@ -215,18 +227,17 @@ curl http://localhost:5000/api/top-searches
 
 ---
 
-## 🧠 Future Improvements
-- 🔖 Add user collections / favorites  
-- 📦 Download selected images  
-- 🌓 Dark mode UI  
-- 📈 Analytics dashboard for searches  
+##  Future Improvements
+-  Add user collections / favorites  
+-  Download selected images  
+-  Dark mode UI  
+-  Analytics dashboard for searches  
 
 ---
 
 ## 👨‍💻 Developer
 **Author:** Mohd Abdul Rahman  
-**Mentor:**  Founder & CEO, UD Studios  
-**Duration:** Internship Project — 7 Days  
+**Gmail:** mohdabdulrahman510@gmail.com  
 
 ---
 
