@@ -155,30 +155,30 @@ After clicking on search it redirects to the Login Page if the user isn't logged
 
 ### OAuth Login 
 
-![Login](./client/src/assets/login.png)
+![Login](./client/src/assets/login.PNG)
 
 ### sample Google Login
-![Google](./client/src/assets/google1.png)
+![Google](./client/src/assets/google1.PNG)
 
-![Google](./client/src/assets/google2.png)
+![Google](./client/src/assets/google2.PNG)
 
 
 ### sample github login
 
-![GitHub](./client/src/assets/github1.png)
+![GitHub](./client/src/assets/github1.PNG)
 
 
 ### sample Facebook login
 
-![GitHub](./client/src/assets/fb.png)
+![GitHub](./client/src/assets/fb.PNG)
 
 After login and if the user is logged in the user can search the images
 
 ### sample search
 
-![Search](./client/src/assets/deer.png)
+![Search](./client/src/assets/deer.PNG)
 
-![Search](./client/src/assets/man.png)
+![Search](./client/src/assets/man.PNG)
 
 
 
